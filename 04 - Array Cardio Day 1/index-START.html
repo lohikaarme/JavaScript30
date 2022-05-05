@@ -115,7 +115,7 @@
         // Array.prototype.reduce()
         // 4. How many years did all the inventors live all together?
 
-        const totalYears = inventors.reduce((total, inventor) => {
+        const totalYears = inventors.reduce((total, inventor) => { // total is running total, inventor is item
             return total + (inventor.passed - inventor.year);
         }, 0); // putting zero makes it so total does not return undefine as it is not let
 
